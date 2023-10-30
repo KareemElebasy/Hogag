@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    font-family: "DIN Next LT Arabic";
+  }
+  
+
+
+.bg-light-primary {
+  background: linear-gradient(179.65deg, rgba(255, 255, 255, 0.182) 4.76%, rgba(231, 172, 109, 0.0951708) 67.97%, rgba(231, 172, 109, 0) 99.7%);
+}
+  @font-face {
+    font-family: "DIN Next LT Arabic";
+    src: url(../fonts/DINNextLTArabic-Regular-3.ttf);
+  }
+  .main_btn {
+    display: inline-block;
+    background-color: rgba(167, 118, 70, 1);
+    color: white;
+    border-radius: 31px;
+    transition: all 0.3s;
+    padding: .5rem 1rem;
+  }
+  
+  .main_btn:hover {
+    background-color: white;
+    color: rgba(167, 118, 70, 1);
+  }
+  
