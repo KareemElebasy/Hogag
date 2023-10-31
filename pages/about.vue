@@ -50,7 +50,6 @@
             </div>
         </div>
     </div>
-
     <!-- Vission Values -->
     <div class="container mx-auto mt-9 mb-9" v-if="vissinValues">
         <h4 class="text-3xl font-bold mb-8">قيمنا</h4>
@@ -100,7 +99,7 @@ const vissinValues = ref(null)
 useAsyncData("vissionData", () => {
     $fetch(`${config.public.baseURL}aboutCompany/visionAndMission`, {
         headers: {
-            "Accept-language": "ar",
+            "Accept-language": locale.value,
             "Accept": "application/json"
         },
     }).then((res) => {

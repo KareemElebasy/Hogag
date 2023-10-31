@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-9 mb-11">
         <img src="https://phpv8.aait-d.com/alhajaaj/public/storage/images/about/Fk96rh11kO7YJNExPEfKs23wtEKOgpTKAYruEqvW.png"
-            alt="Hogag" class="max-w-[380px]" />
+            alt="motawefy-hogag"  />
         <div class="m-auto">
             <h2 class="text-3xl font-bold mb-5 capitalize w-[70%]">شركة مطوفي حجاج الدول الأفريقية غير العربية</h2>
             <p>تأسس هذا الكيان رسمياً عام 1404هـ كمؤسسة مقتصرة على مجموعة مغلقة ومحددة من المساهمين، مختصة بتقديم خدمات الحج

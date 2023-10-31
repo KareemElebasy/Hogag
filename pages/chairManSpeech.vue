@@ -1,9 +1,11 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5" v-if="chairManSpeech">
-        <div class="col-span-1">
-            <img :src="chairManSpeech.image" alt="motawefy-hogag">
+    <div class="container mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5" v-if="chairManSpeech">
+        <div class="md:col-span-2" v-html="chairManSpeech.ar.text"></div>
+        <div class="md:col-span-1">
+            <img :src="chairManSpeech.image" class="w-full object-cover" alt="motawefy-hogag">
         </div>
-        <div class="col-span-2" v-html="chairManSpeech.ar.text"></div>
+    </div>
     </div>
 </template>
 

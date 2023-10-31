@@ -11,6 +11,8 @@
         <HomeFactsSection :facts="facts" />
         <HomeCountrySection />
         <HomeNewsSection :news="news" />
+        <HomeTestimonials :testimonials="testimonials"/>
+        <HomePartnersSection :partners="partners"/>
     </div>
 </template>
 

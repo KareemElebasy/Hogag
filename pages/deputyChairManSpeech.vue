@@ -1,9 +1,11 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5" v-if="deputyChairManSpeech">
+    <div class="container mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5" v-if="deputyChairManSpeech">
         <div class="col-span-1">
-            <img :src="deputyChairManSpeech.image" alt="motawefy-hogag">
+            <img :src="deputyChairManSpeech.image" class="" alt="motawefy-hogag">
         </div>
         <div class="col-span-2" v-html="deputyChairManSpeech.ar.text"></div>
+    </div>
     </div>
 </template>
 

@@ -7,14 +7,14 @@
             </nuxt-link>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
-            <div v-for="item in news" :key="item.id" class="max-w-sm max-h-[30rem] bg-light-primary">
-                <img class="min-h-[10rem] max-h-[10rem]  object-cover" :src="item.image[0]"
-                    alt="motawefy-hogag" />
+            <div v-for="item in news" :key="item.id"
+                class="bg-white w-full flex flex-col rounded-[3rem] h-full pb-5 border">
+                <div class="w-[100%]"><img :src="item.image[0]" alt="motawefy-hogag"
+                        class="rounded-t-[3rem] h-[12rem] w-full object-cover"></div>
                 <div class="p-3">
-                    <div class="flex items-center justify-between  text-gray-400 text-[.9rem]">
-                        <h5 class="mb-2 font-bold">{{ item.category_name }}
-                        </h5>
-                        <h6>{{ item.publish_date }}</h6>
+                    <div class="text-gray-400 flex gap-2">
+                        <p class="capitalize mb-2 font-bold">{{ item.category_name }}</p>
+                        <p>{{ item.publish_date }}</p>
                     </div>
                     <p class="mb-3 text-black font-bold">{{ item.title }}</p>
                 </div>

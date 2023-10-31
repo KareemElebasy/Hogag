@@ -25,4 +25,15 @@
 .main_btn:hover {
   background-color: white;
   color: rgb(167, 118, 70);
+}
+
+.sec_btn {
+  color: peru;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.sec_btn:hover {
+  background-color: white;
+  color: rgb(167, 118, 70);
 }/*# sourceMappingURL=tailwind.css.map */
