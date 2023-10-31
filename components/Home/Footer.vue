@@ -1,6 +1,6 @@
 <template>
     <div  class="bg-bgprimary relative mt-[15rem]" >
-        <div class="absolute top-[-5rem] md:top-[-6rem] lg:top-[-10rem]">
+        <div class="absolute top-[-3rem] sm:top-[-2rem] md:top-[-6rem] lg:top-[-10rem]">
             <img src="../../assets/images/footer.svg" alt="motawefy-hogag">
         </div>
         <div class="container pt-5">
