@@ -26,20 +26,19 @@
             <div class="card rounded bg-white p-4 shadow-md flow-root">
                 <div class="flex float-right gap-2" v-if="serviceData?.service?.previous">
                     <nuxt-link :to="`${serviceData?.service?.previous?.id}`" class="m-auto">
-                        <div class="gold-text">
-                            <p class="font-bold"><i class="ml-1 fas fa-arrow-right"></i> السابق</p>
+                        <div class="text-primary">
+                            <p class="text-bold"> {{ $t("PrevBtn") }}</p>
                         </div>
                     </nuxt-link>
-                    <img
-                    :src="serviceData?.service?.previous?.image" alt="hogag-motawefy" class="w-[90px] h-auto m-auto">
+                    <img :src="serviceData?.service?.previous?.image" alt="hogag-motawefy" class="w-[90px] h-auto m-auto">
                     <h2 class="text-xl font-medium m-auto">{{ serviceData?.service?.previous?.name }} </h2>
                 </div>
                 <div class="flex float-left gap-2" v-if="serviceData?.service?.next">
-                    <h2 class="text-xl font-[2rem] m-auto">{{ serviceData?.service?.next?.title }}</h2><img
-                        :src="serviceData?.service?.next?.image" alt="hogag-motawefy"
-                        class="w-[90px] h-auto m-auto"><nuxt-link :to="`${serviceData?.service?.next?.id}`" class="m-auto">
-                        <div class="gold-text">
-                            <p class="font-bold">التالي</p>
+                    <h2 class="text-xl font-[2rem] m-auto">{{ serviceData?.service?.next?.title }}</h2>
+                    <img :src="serviceData?.service?.next?.image" alt="hogag-motawefy" class="w-[90px] h-auto m-auto">
+                    <nuxt-link :to="`${serviceData?.service?.next?.id}`" class="m-auto">
+                        <div class="text-primary">
+                            <p class="font-bold">{{ $t("NextBtn") }}</p>
                         </div>
                     </nuxt-link>
                 </div>

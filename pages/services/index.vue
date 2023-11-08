@@ -5,7 +5,7 @@
             <div class="md:col-span-2 flex flex-col">
                 <h2 class="font-bold text-[2rem] pb-2">{{ item.name }}</h2>
                 <h4 class="text-[1rem] pb-2">{{ item.description }}</h4>
-                <nuxt-link class="sec_btn" :to="localePath(`/services/${item.id}`)">أقرأ المزيد</nuxt-link>
+                <nuxt-link class="sec_btn" :to="localePath(`/services/${item.id}`)">{{$t("ReadMoreBtn")}}</nuxt-link>
             </div>
         </div>
     </div>

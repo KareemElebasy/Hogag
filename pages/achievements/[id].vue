@@ -42,24 +42,24 @@
         <!-- Pagination -->
         <div class="bg-white pb-8 mt-14">
             <h2 class="text-2xl font-bold mb-[2rem] mt-[4rem] capitalize">مزيد من الخدمات</h2>
-            <div class="card rounded bg-white p-4 shadow-md flow-root">
-                <div class="flex float-right gap-2" v-if="previous_workDada?.previous">
-                    <nuxt-link :to="localePath(`${previous_workDada?.previous?.id}`)" class="m-auto">
+            <div class="card rounded bg-white p-4 shadow-md flex justify-between">
+                <div class="flex  gap-2" v-if="previous_workDada?.previous">
+                    <nuxt-link :to="`${previous_workDada?.previous?.id}`" class="m-auto">
                         <div class="gold-text">
-                            <p class="font-bold"> السابق</p>
+                            <p class="font-bold"> {{ $t("PrevBtn") }}</p>
                         </div>
                     </nuxt-link>
                     <img :src="previous_workDada?.previous?.image" alt="hogag-motawefy"
                         class="rounded-[2rem] w-[90px] h-auto m-auto">
                     <h2 class="text-xl font-medium m-auto">{{ previous_workDada?.previous?.name }} </h2>
                 </div>
-                <div class="flex float-left gap-2" v-if="previous_workDada?.next">
+                <div class="flex  gap-2" v-if="previous_workDada?.next">
                     <h2 class="text-xl font-[2rem] m-auto">{{ previous_workDada?.next?.title }}</h2><img
                         :src="previous_workDada?.next?.image" alt="hogag-motawefy"
-                        class="w-[90px] rounded-[2rem] h-auto m-auto"><nuxt-link :to="localePath(`${previous_workDada?.next?.id}`)"
+                        class="w-[90px] rounded-[2rem] h-auto m-auto"><nuxt-link :to="`${previous_workDada?.next?.id}`"
                         class="m-auto">
                         <div class="gold-text">
-                            <p class="font-bold">التالي</p>
+                            <p class="font-bold">{{ $t("NextBtn") }}</p>
                         </div>
                     </nuxt-link>
                 </div>
@@ -71,7 +71,6 @@
 <script setup>
 const config = useRuntimeConfig()
 const { locale } = useI18n();
-const localePath = useLocalePath()
 const { id } = useRoute().params
 const previous_workDada = ref(null)
 useAsyncData("previous_workDada", () => {

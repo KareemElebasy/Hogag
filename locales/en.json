@@ -11,7 +11,7 @@
   "WordManger": "chair Man Speech Word",
   "Category": "Categories",
   "boardOfDirectories": "boardOfDirectories",
-  "WordDepputyManger": "deputy chair Man Speech",
+  "WordDeputyManger": "deputy chair Man Speech",
   "OurServices": "Our Services",
   "Advancedthumbnails": "Advanced thumbnails",
   "Countries": "Countries",
@@ -22,6 +22,8 @@
   "HeroSectionBtn": "Discover More",
   "Desc": "This entity was officially established in 1404 AH as an institution limited to a closed and specific group of shareholders, specialized in providing Hajj services to pilgrims coming exclusively from non-Arab African countries, in line with the Kingdom's Vision 2030 AD and the directives of the Kingdom of Saudi Arabia. Kingdom of Saudi Arabia. The wise leadership - may God protect it - launched the Program for Serving the Guests of God, which aims to receive (30) million Hajj and Umrah pilgrims by the year 2030 AD.",
   "ReadMoreBtn": "Read More",
+  "NextBtn": "Next",
+  "PrevBtn": "Previous",
 
   "ServiceHeading": "Our services for the guests of God",
 

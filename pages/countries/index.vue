@@ -11,7 +11,10 @@
                     <div v-for="item, index in Object.values(item)" :key="item.index"
                         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         <div v-for="item in item ">
-                            {{ item.name }}</div>
+                            <nuxt-link :to="`/countries/${item.id}`" class="block max-w-[12rem] w-[12rem] h-[18rem] max-h-[18rem]">
+                                <img class="w-fit" :src="item.logo" :alt="item.name">
+                            </nuxt-link>
+                        </div>
                     </div>
                 </div>
                 <!-- <p v-if="Object.keys(item).join()">{{ Object.keys(item)}}</p> -->
@@ -25,6 +28,7 @@
 const config = useRuntimeConfig()
 const { locale } = useI18n();
 const countries = ref(null)
+const localePath = useLocalePath()
 const countryAlpha = ref(null)
 const countryAlphaItems = ref(null)
 useAsyncData("countries", () => {

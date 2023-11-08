@@ -101,12 +101,12 @@
             <div v-if="sidebasIsOpen" class="fixed top-16 h-screen w-screen duration-300 z-40 start-0">
                 <div class="p-3 bg-white w-[100%] h-full">
                     <ul class="">
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/')"> {{ $t("Home") }}
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/')"> {{ $t("Home") }}
                             </nuxt-link></li>
                         <li>
                             <div>
                                 <div @click="toggleDropdwon"
-                                    class="flex gap-2 items-center relative mb-3 border rounded-xl p-3">
+                                    class="flex gap-2 items-center relative mb-3 border-b-2 rounded-xl p-3">
                                     {{ $t("About") }} <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"
                                         data-v-inspector="components/Home/Navbar.vue:87:29">
@@ -148,18 +148,18 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/services')">{{
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/services')">{{
                             $t("OurServices") }}</nuxt-link></li>
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/achievements')">{{
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/achievements')">{{
                             $t("Advancedthumbnails") }}</nuxt-link></li>
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/countries')">{{
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/countries')">{{
                             $t("Countries") }}</nuxt-link></li>
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/partners')">{{
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/partners')">{{
                             $t("Ourpartners") }}</nuxt-link></li>
                         <li>
                             <div>
                                 <div @click="toggleDropdwon2"
-                                    class="mb-3 border rounded-xl p-3 flex gap-2 items-center relative">
+                                    class="mb-3 border-b-2 rounded-xl p-3 flex gap-2 items-center relative">
                                     {{ $t("MediaCenter") }}
                                     <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 10 6" data-v-inspector="components/Home/Navbar.vue:87:29">
@@ -176,11 +176,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><nuxt-link class="block mb-3 border rounded-xl p-3" :to="localePath('/contactUs')">{{
+                        <li><nuxt-link class="block mb-3 border-b-2 rounded-xl p-3" :to="localePath('/contactUs')">{{
                             $t("Contactus") }}</nuxt-link></li>
                         <li>
                             <nuxt-link :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
-                                class="block mb-3 border rounded-xl p-3 text-[#9F8B58]">
+                                class="block mb-3 border-b-2 rounded-xl p-3 text-[#9F8B58]">
                                 <img v-if="$i18n.locale == 'ar'" src="../../assets/images/en.png" class="w-[2rem]"
                                     alt="flag-english">
                                 <img v-if="$i18n.locale == 'en'" src="../../assets/images/ar.png" class="w-[2rem]"

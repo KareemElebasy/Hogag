@@ -10,7 +10,6 @@
             <div class="w-[20] h-[14rem] rounded-2xl">
                 <img class="w-[20] m-auto h-[14rem] object-cover rounded-2xl" :src="item?.image[0]" alt="motawefy-hogag">
             </div>
-
         </div>
 
     </div>
