@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16" v-if="facts">
-        <div class="col-span-1"><img class="max-w-[22rem]" src="../../assets/images/facts-image.svg" alt="motawefy-hogag">
+        <div class="col-span-1 m-auto"><img class="max-w-[22rem]" src="../../assets/images/facts-image.svg" alt="motawefy-hogag">
         </div>
         <div class="col-span-1 m-auto p-10">
             <div class="grid grid-cols-2 gap-10 font-bold">
