@@ -4,7 +4,7 @@
     </div>
     <HomeHeader />
     <div class="container">
-        <HomeAboutSection />
+        <HomeAboutSection :about="about" />
         <HomeServicesSection :services="services" />
         <HomePreviousWork :previousWork="previousWork" />
         <HomeEnrichmentSection :enrichment="enrichment" />
@@ -21,6 +21,7 @@ const config = useRuntimeConfig()
 const { locale } = useI18n();
 const sliders = ref(null)
 const services = ref(null)
+const about = ref(null)
 const previousWork = ref(null)
 const enrichment = ref(null)
 const facts = ref(null)
@@ -37,6 +38,7 @@ await useAsyncData("home", () => {
         const data = res.data
         console.log(data);
         sliders.value = data.sliders
+        about.value = data.about
         services.value = data.services
         previousWork.value = data.previousWork
         enrichment.value = data.enrichment

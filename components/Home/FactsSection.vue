@@ -4,7 +4,7 @@
         </div>
         <div class="col-span-1 m-auto p-10">
             <div class="grid grid-cols-2 gap-10 font-bold">
-                <div>
+                <div class="">
                     <img class="w-[3rem]" src="../../assets/images/msg.png" alt="motawefy-hogag">
                     <div class="flex">
                         <h5 class="text-[2rem]">{{ facts.customers }}</h5>

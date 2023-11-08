@@ -1,8 +1,8 @@
 <template>
     <div v-if="partners" class="mt-20">
         <div class="flex justify-between items-center mb-3">
-            <h6 class="font-bold text-[2rem]">شركاؤنا</h6>
-            <nuxt-link class="main_btn" :to="localePath('/')">
+            <h6 class="font-bold text-[2rem]">{{$t("Ourpartners")}}</h6>
+            <nuxt-link class="main_btn" :to="localePath('/partners')">
                 {{ $t("ReadMoreBtn") }}
             </nuxt-link>
         </div>

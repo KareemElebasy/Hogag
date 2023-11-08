@@ -1,8 +1,8 @@
 <template>
     <div class="mt-10" v-if="news">
         <div class="flex justify-between items-center mb-3">
-            <h6 class="font-bold text-[2rem]">أخبارنا</h6>
-            <nuxt-link class="main_btn" :to="localePath('/')">
+            <h6 class="font-bold text-[2rem]">{{$t("newsheading")}}</h6>
+            <nuxt-link class="main_btn" :to="localePath('/news')">
                 {{ $t("ReadMoreBtn") }}
             </nuxt-link>
         </div>

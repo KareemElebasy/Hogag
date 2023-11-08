@@ -1,7 +1,7 @@
 <template>
     <div v-if="testimonials" class="mt-20">
         <div class="flex justify-between items-center mb-3">
-            <h6 class="font-bold text-[2rem]">قالوا عنا</h6>
+            <h6 class="font-bold text-[2rem]">{{ $t('whatsay') }}</h6>
             <nuxt-link class="main_btn" :to="localePath('/')">
                 {{ $t("ReadMoreBtn") }}
             </nuxt-link>

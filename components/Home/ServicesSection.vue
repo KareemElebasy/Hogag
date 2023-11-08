@@ -16,7 +16,7 @@
         <div class="col-span-3 mb-4">
             <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-5">
                 <div class="">
-                    <h4 class="text-xl md:text-5xl w-[50%] mb-3 flex font-bold py-5 capitalize">خدماتنا لضيوف الرحمن</h4>
+                    <h4 class="text-xl md:text-5xl w-[50%] mb-3 flex font-bold py-5 capitalize">{{ $t('ServiceHeading') }}</h4>
                     <nuxt-link to="/"
                         class="text-xl md:text-3xl md:max-w-[300px] mb-3 flex font-bold py-5 text-primary capitalize">
                         <p>{{ services[0].name }}</p>
