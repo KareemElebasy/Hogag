@@ -7,7 +7,7 @@
   }" :navigation="false">
     <SwiperSlide v-for="item  in sliderData" :key="item.id">
       <div class="swiper-wraper" :style="`background-image: url('${item.mainImage}');`">
-        <div class="min-h-[88vh] font-[600]">
+        <div class="min-h-[90vh] font-[600]">
           <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-28" >
               <div class="" >
