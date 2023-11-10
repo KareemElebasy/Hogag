@@ -22,7 +22,7 @@
                                     <p class="text-black text-[1.1rem] mb-4">
                                         {{ item.description }}
                                     </p>
-                                    <nuxt-link class="main_btn block mt-6 " to="/">{{ $t("ReadMoreBtn") }}</nuxt-link>
+                                    <nuxt-link class="main_btn block mt-6 " :to="localePath(`/achievements/${item.id}`)">{{ $t("ReadMoreBtn") }}</nuxt-link>
                                 </div>
                             </div>
                         </div>
@@ -35,6 +35,7 @@
 
 <script setup>
 const props = defineProps(["previousWork"])
+const localePath = useLocalePath()
 </script>
 
 <style lang="scss" scoped></style>b

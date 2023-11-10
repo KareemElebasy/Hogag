@@ -1,5 +1,5 @@
 <template>
-    <nav class="container max-auto flex justify-between items-center pt-2 pb-2 ">
+    <nav class="container max-auto flex justify-between items-center pt-2 pb-2">
         <div>
             <nuxt-link :to="localePath('/')">
                 <img src="../../assets/images/logo.svg" alt="motawefy-hogag">

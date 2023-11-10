@@ -6,6 +6,26 @@
   }
   
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A77646;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
 
 .bg-light-primary {
   background: linear-gradient(179.65deg, rgba(255, 255, 255, 0.182) 4.76%, rgba(231, 172, 109, 0.0951708) 67.97%, rgba(231, 172, 109, 0) 99.7%);
