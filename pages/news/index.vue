@@ -31,16 +31,16 @@
 
                     <ul class="ms-6 space-y-3">
                         <li>
-                            <label for="all-category">الكل
+                            <label class="flex justify-between"  for="all-category">الكل
                                 <input type="checkbox" id="all-category" class="checked:bg-blue-500" value="true">
                             </label>
                         </li>
                         <li>
-                            <label for="news1">مجتمع المؤسسة
+                            <label class="flex justify-between" for="news1">مجتمع المؤسسة
                                 <input type="checkbox" id="news1" class="checked:bg-blue-500" value=""></label>
                         </li>
                         <li>
-                            <label for="news1">الموارد البشرية
+                            <label class="flex justify-between" for="news1">الموارد البشرية
                                 <input type="checkbox" id="news1" class="checked:bg-blue-500" value=""></label>
                         </li>
                     </ul>
@@ -49,45 +49,45 @@
                     <h2 class="font-bold mb-2">سنة الخبر</h2>
                     <ul class="ms-5 mediaCenterList space-y-2">
                         <li>
-                            <label for="all">الكل
+                            <label class="flex justify-between"  for="all">الكل
                                 <input type="checkbox" id="all" class="checked:bg-blue-500" value="">
                             </label>
                         </li>
                         <li>
-                            <label for="year0">2017 <input type="checkbox" id="year0" class="checked:bg-blue-500"
+                            <label class="flex justify-between"  for="year0">2017 <input type="checkbox" id="year0" class="checked:bg-blue-500"
                                     value="2017"></label>
                         </li>
                         <li>
-                            <label for="year1">2018 <input type="checkbox" id="year1" class="checked:bg-blue-500"
+                            <label class="flex justify-between"  for="year1">2018 <input type="checkbox" id="year1" class="checked:bg-blue-500"
                                     value="2018">
                             </label>
                         </li>
                         <li>
-                            <label for="year2">2019
+                            <label class="flex justify-between"  for="year2">2019
                                 <input type="checkbox" id="year2" class="checked:bg-blue-500" value="2019"></label>
                         </li>
                         <li>
-                            <label for="year3">2020
+                            <label class="flex justify-between"  for="year3">2020
                                 <input type="checkbox" id="year3" class="checked:bg-blue-500" value="2020">
                             </label>
                         </li>
                         <li>
-                            <label for="year4">2021
+                            <label class="flex justify-between"  for="year4">2021
                                 <input type="checkbox" id="year4" class="checked:bg-blue-500" value="2021">
                             </label>
                         </li>
                         <li>
-                            <label for="year5">2022 <input type="checkbox" id="year5" class="checked:bg-blue-500"
+                            <label class="flex justify-between"  for="year5">2022 <input type="checkbox" id="year5" class="checked:bg-blue-500"
                                     value="2022">
                             </label>
                         </li>
                         <li>
-                            <label for="year6">2023 <input type="checkbox" id="year6" class="checked:bg-blue-500"
+                            <label class="flex justify-between"   for="year6">2023 <input type="checkbox" id="year6" class="checked:bg-blue-500"
                                     value="2023">
                             </label>
                         </li>
                     </ul>
-                    <button type="submit" class="main_btn h-10 w-full mt-5 font-[2rem]">search</button>
+                    <button class="main_btn h-10 w-full mt-5 font-[2rem]">search</button>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="md:col-span-1">
-                <div class="bg-white border w-full p-5 rounded-xl">
+                <div class="bg-white border w-full p-5 rounded-xl filterSec">
 
                     <h2 class="font-bold mb-2">الأقسام</h2>
 
@@ -122,4 +122,9 @@ await useAsyncData("photoGalleries", () => {
 console.log(photoGalleries);
 </script>
 
-<style lang="scss" scoped></style>b
+<style lang="scss" scoped>
+.filterSec ul li label {
+    display: flex;
+    justify-content: space-between;
+}
+</style>
