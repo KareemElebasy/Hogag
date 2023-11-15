@@ -19,10 +19,10 @@
                                     d="m1 1 4 4 4-4" data-v-inspector="components/Home/Navbar.vue:89:33"></path>
                             </svg>
                         </div>
-                        <ul v-if="dropDownIsOpen" class="flex-col absolute z-50 mt-2 p-2 bg-white rounded min-w-[10rem]">
+                        <ul v-if="dropDownIsOpen" class="flex-col absolute z-50 mt-2 p-2 bg-white rounded w-fit">
                             <li><nuxt-link :to="localePath('/about')">{{ $t("About") }}</nuxt-link></li>
                             <li>
-                                <div>
+                                <div class="py-1">
                                     <div @click="toggleSubDropdwon" class="flex gap-2 items-center relative">
                                         {{ $t("Words") }} <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"
@@ -33,7 +33,7 @@
                                         </svg>
                                     </div>
                                     <ul v-if="subdropDownIsOpen"
-                                        class="flex-col absolute z-50 mt-2 p-2 bg-white rounded min-w-[15rem]">
+                                        class="flex-col absolute z-50 mt-2 p-2 py-3 bg-white rounded min-w-[15rem]">
                                         <li><nuxt-link :to="localePath('/chairManSpeech')">{{ $t("WordManger")
                                         }}</nuxt-link></li>
                                         <li><nuxt-link :to="localePath('/deputyChairManSpeech')">{{ $t("WordDeputyManger")
